@@ -47,7 +47,7 @@
     <div class="container">
       <h1>Welcome to Blood Group Identification Page!!</h1>
       <hr />
-      <form class="signup-form" method="post">
+      <form class="signup-form" method="get" action="home_page.html">
         <h2>Sign up</h2>
         <div class="input-group">
           <label for="username">Username :</label>
@@ -61,9 +61,11 @@
           <label for="password">Password confirmation:</label>
           <input type="password" id="password" name="password" required />
         </div>
-        <button type="submit" class="btn signup" formaction="home">
-          Sign up
-        </button>
+        <form method="get">
+          <button type="submit" class="btn signup" formaction="">
+            Sign up
+          </button>
+        </form>
       </form>
       <hr />
     </div>
