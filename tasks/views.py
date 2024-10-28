@@ -5,15 +5,7 @@ from django.shortcuts import HttpResponseRedirect
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 
-# Create your views here.
-# def home(request):
-#     return render(request, 'home_page.html')
-# def login(request):
-#     return render(request, 'login.html')
-# def signup(request):
-#     return render(request, 'signup.html')
 
-# Create your views here.
 def home(request):
     # request is used to navgate the command to our html page
     # for navigation we need to use a keyword called as "render"
@@ -57,7 +49,6 @@ def register(request):
     else:
         form = UserCreationForm()
         return render(request,'signup.html', {'form':form})
- 
 
 def profile(request):
     if request.method == 'POST' and request.FILES:
